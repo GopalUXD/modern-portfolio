@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Name <span className="text-customAccent">.</span>
+            Name<span className="text-customAccent">.</span>
           </h1>
         </Link>
 
@@ -21,7 +22,9 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="xl:hidden">Mobile Nav</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
