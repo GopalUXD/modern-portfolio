@@ -5,10 +5,10 @@ import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <section className="h-full sm:mx-20 mx-12">
+    <section className="h-full">
       {" "}
-      <div className="">
-        <div className="flex flex-col xl:flex-row justify-between xl:pt-4 xl:pb-24">
+      <div className="sm:mx-20 mx-12">
+        <div className="flex flex-col xl:flex-row justify-between items-center xl:pt-4 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="text-3xl mb-6">

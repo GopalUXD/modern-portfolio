@@ -23,14 +23,19 @@ const Photo = () => {
           }}
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px]"
         >
-          <Image
-            // src="/assets/photo.png"
+          {/* <Image
             src={userImg}
             priority
             quality={100}
             fill
             alt="GKS"
             className="object-contain"
+          /> */}
+
+          <img
+            src="/GKS.jpeg"
+            alt="GKS"
+            className="object-contain w-full h-full"
           />
         </motion.div>
 
