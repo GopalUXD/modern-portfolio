@@ -1,5 +1,5 @@
 import React from "react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const stairAnimation = {
   initial: {
@@ -13,7 +13,7 @@ const stairAnimation = {
   },
 };
 
-const reverseIndex = (index: any) => {
+const reverseIndex = (index: number) => {
   const totalSteps = 6;
   return totalSteps - index - 1;
 };

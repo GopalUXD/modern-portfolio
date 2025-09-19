@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import userImg from "../public/GKS.jpeg";
 
 const Photo = () => {
   return (
@@ -24,7 +25,7 @@ const Photo = () => {
         >
           <Image
             // src="/assets/photo.png"
-            src="/GKS.JPEG"
+            src={userImg}
             priority
             quality={100}
             fill

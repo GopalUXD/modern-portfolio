@@ -12,7 +12,7 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="text-3xl mb-6">
-              Hello I'm <br />{" "}
+              Hello I&apos;m <br />{" "}
               <span className="text-customAccent font-semibold">
                 Gopal Kumar Saha
               </span>
@@ -22,7 +22,7 @@ export default function Home() {
               Highly motivated and results-driven Software Engineer with above 3
               years of professional experience specializing in full-stack web
               development. Proficient in modern front-end frameworks like
-              React.js, Angular, and Next.js, alongside back-end technologies
+              React.js, Angular, and Next js, alongside back-end technologies
               such as Node.js, Express, MySQL, and MongoDB. Adept at designing
               and building scalable web applications, API development, and
               database management. Strong collaborator with a passion for

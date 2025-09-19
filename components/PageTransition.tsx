@@ -4,8 +4,9 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-const PageTransition = ({ children }: any) => {
+const PageTransition = ({ children }: React.PropsWithChildren) => {
   const pathname = usePathname();
+
   return (
     <AnimatePresence>
       <div key={pathname}>
@@ -17,7 +18,6 @@ const PageTransition = ({ children }: any) => {
           }}
           className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
         />
-
         {children}
       </div>
     </AnimatePresence>
