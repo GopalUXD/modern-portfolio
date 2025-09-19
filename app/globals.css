@@ -125,20 +125,17 @@
   }
   body {
     /* @apply bg-background text-foreground; */
-    @apply font-primary bg-primary text-white;
+    @apply font-primary bg-primary text-white leading-loose;
   }
-
-
-
 }
 
-@theme {
+/* @theme {
   --container-padding: 15px;
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 960px;
   --breakpoint-xl: 1200px;
-}
+} */
 
 

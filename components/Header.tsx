@@ -6,11 +6,11 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 ">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="py-8 xl:py-12 sm:mx-20 mx-12">
+      <div className="flex justify-between items-center">
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Name<span className="text-customAccent">.</span>
+            Gopal<span className="text-customAccent">.</span>
           </h1>
         </Link>
 
