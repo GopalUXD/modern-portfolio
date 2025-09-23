@@ -129,6 +129,15 @@
   }
 }
 
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-hover:hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+}
+
 /* @theme {
   --container-padding: 15px;
 
