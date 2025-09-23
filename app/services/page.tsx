@@ -39,7 +39,7 @@ const services = [
 const ServicePage = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-8">
-      <div className="sm:mx-20 mx-12">
+      <div className="sm:mx-16 mx-8">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{

@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -7,8 +8,8 @@ export default function Home() {
   return (
     <section className="h-full">
       {" "}
-      <div className="sm:mx-20 mx-12">
-        <div className="flex flex-col xl:flex-row justify-between items-center xl:pt-4 xl:pb-24">
+      <div className="sm:mx-16 mx-8">
+        <div className="flex flex-col xl:flex-row justify-between items-center xl:pt-4 xl:pb-4">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="text-3xl mb-6">
@@ -17,7 +18,7 @@ export default function Home() {
                 Gopal Kumar Saha
               </span>
             </h1>
-            <p className="mzx-w-[500px] mb-9 text-white/80">
+            <p className="mzx-w-[500px] mb-9 text-white/80 text-justify">
               {" "}
               Highly motivated and results-driven Software Engineer with above 3
               years of professional experience specializing in full-stack web
@@ -51,6 +52,8 @@ export default function Home() {
             <Photo />
           </div>
         </div>
+
+        <Stats />
       </div>{" "}
     </section>
   );
