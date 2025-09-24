@@ -219,9 +219,7 @@ const ResumePage = () => {
                         key={index}
                         className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                       >
-                        <span className="whitespace-nowrap text-customAccent">
-                          {item.degree}
-                        </span>
+                        <span className="text-customAccent">{item.degree}</span>
                         <h3 className="text-xl w-full text-center lg:text-left">
                           {item.institution}
                         </h3>
