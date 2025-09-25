@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import { toast } from "sonner";
 
 const Header = () => {
   return (
@@ -16,10 +19,11 @@ const Header = () => {
 
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
-            {" "}
-            <Button>Hire Me</Button>
-          </Link>
+          {/* <Link href="/contact"> */}{" "}
+          <Button onClick={() => toast.success("Thank you for your interest")}>
+            Hire Me
+          </Button>
+          {/* </Link> */}
         </div>
 
         <div className="xl:hidden">
