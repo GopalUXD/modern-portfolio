@@ -21,7 +21,7 @@ export default function Home() {
             </h1>
             <p className="mzx-w-[500px] mb-9 text-white/80 text-justify">
               {" "}
-              Highly motivated and results-driven Software Engineer with above 3
+              Highly motivated and results-driven Software Engineer with above 4
               years of professional experience specializing in full-stack web
               development. Proficient in modern front-end frameworks like
               React.js, Angular, and Next js, alongside back-end technologies

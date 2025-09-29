@@ -18,6 +18,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import WorkSliderButton from "@/components/WorkSliderButton";
 
+import type { Swiper as SwiperType } from "swiper";
+
 const projects = [
   {
     num: "01",
@@ -32,8 +34,8 @@ const projects = [
       { name: "MongoDB" },
     ],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://suggestme.ultra-x.jp/login",
+    github: "https://github.com/GopalUXD",
   },
 
   {
@@ -44,8 +46,8 @@ const projects = [
       "Developed a visitor registration tool for managing attendance of visitors and organizers using Next.js, Node.js, and MySQL database.",
     stack: [{ name: "Next JS" }, { name: "Node JS" }, { name: "MySQL" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://bdtmp.ultra-x.jp/vrt/en/login",
+    github: "https://github.com/GopalUXD",
   },
 
   {
@@ -56,8 +58,8 @@ const projects = [
       "Built an event management platform where organizers can create events and visitors can attend by scanning projects from participating companies.",
     stack: [{ name: "Next JS" }, { name: "Node JS" }, { name: "MySQL" }],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://bdtmp.ultra-x.jp/ems/en/login",
+    github: "https://github.com/GopalUXD",
   },
 
   {
@@ -68,8 +70,8 @@ const projects = [
       "Developed a platform for managing and selling used or old PCs using Next.js, Node.js, and MySQL database.",
     stack: [{ name: "Next JS" }, { name: "Node JS" }, { name: "MySQL" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://bdtmp.ultra-x.jp/pcict/en/login",
+    github: "https://github.com/GopalUXD",
   },
 
   {
@@ -80,15 +82,15 @@ const projects = [
       "Designed and implemented a showroom website for optical products to manage sales statements and securely store customer information.",
     stack: [{ name: "Next JS" }, { name: "Node JS" }, { name: "MySQL" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://sapniloptics.com/home",
+    github: "https://github.com/GopalUXD",
   },
 ];
 
 const WorkPage = () => {
   const [project, setProject] = useState(projects[0]);
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperType) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
   };
@@ -105,11 +107,11 @@ const WorkPage = () => {
       <div className="flex flex-col xl:flex-row xl:gap-[30px]">
         <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
           <div className="flex flex-col gap-[30px]">
-            <h1 className="text-8xl leading-none font-extrabold text-transparent text-outline">
+            <h1 className="xl:text-8xl text-5xl leading-none font-extrabold text-transparent text-outline">
               {" "}
               {project.num}
             </h1>
-            <h2 className="text-[42px] font-bold leading-none text-white hover:text-customAccent transition-all duration-300 capitalize">
+            <h2 className="xl:text-[42px] text-[32px] font-bold leading-none text-white hover:text-customAccent transition-all duration-300 capitalize">
               {" "}
               {project.category} Project
             </h2>
@@ -132,7 +134,7 @@ const WorkPage = () => {
               <Link href={project.live} target="_blank">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
+                    <TooltipTrigger className="xl:w-[70px] xl:h-[70px] w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center">
                       <BsArrowUpRight className="text-white text-3xl hover:text-customAccent transition-all duration-300" />
                     </TooltipTrigger>
                     <TooltipContent>
@@ -145,7 +147,7 @@ const WorkPage = () => {
               <Link href={project.github} target="_blank">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
+                    <TooltipTrigger className="xl:w-[70px] xl:h-[70px] w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center">
                       <BsGithub className="text-white text-3xl hover:text-customAccent transition-all duration-300" />
                     </TooltipTrigger>
                     <TooltipContent>

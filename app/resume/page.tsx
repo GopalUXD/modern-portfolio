@@ -25,7 +25,7 @@ import { TooltipProvider } from "@radix-ui/react-tooltip";
 const about = {
   title: "About me",
   description:
-    "Software engineer with 3 years of experience in React, JavaScript, Next.js, Node.js, and MySQL. Graduate of East West University, currently working at a Japanese software company in Bangladesh, passionate about web development and Japanese culture.",
+    "Software engineer with 4 years of experience in React, JavaScript, Next.js, Node.js, and MySQL. Graduate of East West University, currently working at a Japanese software company in Bangladesh, passionate about web development and Japanese culture.",
   info: [
     {
       fieldName: "Name",
@@ -64,9 +64,9 @@ const about = {
 
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
+  title: "My Experience",
   description:
-    "Software engineer with over 3 years of experience in web development, working on front-end and back-end technologies across international and local projects.",
+    "Software engineer with over 4 years of experience in web development, working on front-end and back-end technologies across international and local projects.",
   items: [
     {
       company: "Ultra-X BD LTD.",
@@ -83,7 +83,7 @@ const experience = {
 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
+  title: "My Education",
   description:
     "Completed formal education in Computer Science and Engineering at East West University, with additional training in Web Design and Development. Holds HSC and SSC qualifications from Lalpur colleges",
   items: [

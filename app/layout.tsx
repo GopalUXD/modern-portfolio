@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Created by GKS",
+  title: "Gopal-Portfolio",
+  description: "Created by Gopal Kumar Saha",
 };
 
 export default function RootLayout({
